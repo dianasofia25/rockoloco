@@ -1,0 +1,104 @@
+<h4 id="titulo-genero" class="text-center">Crear canciones</h4>
+<hr style="width: auto; border-color: black; border-width: 2px;">
+
+<div class="d-flex justify-content-center">
+  <div class="col-md-10 mt-5">
+    <form action="javascript:crearCancion();" id="saveCan" class="validarFormulario" novalidate>
+      <div class="card text-white" style="background-color: rgb(37, 36, 36)">
+        <div class="card-header" style="padding: 10px 10px 7px 25px">
+          <h5>Nueva canción</h5>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="nomC" class="form-label">Nombre cancion</label>
+                <input type="text" id="nomC" class="form-control" required placeholder="Escriba el nombre">
+              </div>
+              <div class="mb-3">
+                <label for="idA" class="form-label">Código Artista</label>
+                <input type="text" id="idA" class="form-control" required placeholder="Escriba el codigo artista">
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <label for="idG" class="form-label">Código género músical</label>
+                <input type="text" id="idG" class="form-control" required placeholder="Escriba el codigo género">
+              </div>
+              <div class="mb-3">
+                <label for="idD" class="form-label">Código Década</label>
+                <input type="text" id="idD" class="form-control" required placeholder="Escriba el código década">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer d-flex justify-content-around" style="padding: 10px 10px 7px 25px">
+          <button type="submit" class="btn btn-danger">Crear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="col-md-6 mt-4">
+    <div class="alert alert-primary" id="canMsgOk" style="display: none">
+      ¡Canción creada con éxito!.
+    </div>
+
+    <div class="alert alert-danger" id="canMsgError" style="display: none">
+      No se logró crear la canción, intenta de nuevo.
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="col-md-10 mt-4" style="border-radius: 20%; margin: 10px 25px 10px 20px">
+    <div class="card" style="background-color: rgb(37, 36, 36); padding: 10px">
+
+      <div class="row">
+        <div class="col">
+          <div class="mb-3" style="margin-bottom: 0px;">
+            <table class="table table-sm table-borderless" id="codigosArtistas">
+              <thead style="color: white">
+                <tr>
+                  <th class="text-start" style="width: 15%">Código artista</th>
+                  <th class="text-start" style="width: 15%">Nombre artista</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3" style="margin-bottom: 0px;">
+            <table class="table table-sm table-borderless" id="codigosGeneros">
+              <thead style="color: white">
+                <tr>
+                  <th class="text-start" style="width: 15%">Código género</th>
+                  <th class="text-start" style="width: 15%">Nombre género</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3" style="margin-bottom: 0px;">
+            <table class="table table-sm table-borderless" id="codigosDecadas">
+              <thead style="color: white">
+                <tr>
+                  <th class="text-start" style="width: 15%">Código decada</th>
+                  <th class="text-start" style="width: 15%">Nombre decada</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
