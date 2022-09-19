@@ -1,0 +1,38 @@
+<h4 id="titulo-genero" class="text-center">Crear géneros</h4>
+<hr style="width: auto; border-color: black; border-width: 2px;">
+
+<div class="d-flex justify-content-center">
+  <div class="col-md-6 mt-5">
+    <form action="javascript:crearGenero();" id="saveGen" class="validarFormulario" novalidate>
+      <div class="card text-white" style="background-color: rgb(37, 36, 36)">
+        <div class="card-header" style="padding: 10px 10px 7px 25px">
+          <h5>Nuevo género</h5>
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-start">
+            <div class="mb-4" style="padding: 10px 10px 7px 10px">
+              <label for="nom" class="form-label">Nombre</label>
+              <input type="text" id="nom" class="form-control" required placeholder="Escriba nombre género" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer" style="padding: 10px 10px 7px 25px">
+          <button type="submit" class="btn btn-danger">Crear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="col-md-6 mt-4">
+    <div class="alert alert-primary" id="genMsgOk" style="display: none">
+      ¡Género creado con éxito!.
+    </div>
+
+    <div class="alert alert-danger" id="genMsgError" style="display: none">
+      No se logró crear el género, intenta de nuevo.
+    </div>
+  </div>
+</div>
