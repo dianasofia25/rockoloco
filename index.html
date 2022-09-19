@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Rockola</title>
+  
+  <link rel="icon" type="image/x-icon" href="src/assets/images/rockoLogo.png">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" type="text/css" href="src/assets/styles/index.css">
+
+  <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="loadHeader();" >
+  <!-- Cuerpo html -->
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+
+      <div id="cabeceraBody" class="col-auto col-md-3 col-xl-2 px-sm-2 px-0">
+        <div id="idCabecera"></div>
+      </div>
+      
+      <div id="ruteoBody" class="col py-3" style="display: inline-block;">
+        <div id="idRuteo"></div>
+      </div>
+    </div>
+  </div>
+  <div id="idReproductor"></div>
+  
+  <!-- Javascripts obligatorios -->
+  <script src="node_modules/routing/route.js"></script>
+  <script src="node_modules/routing/router.js"></script>
+  <script src="src/rutas/ruteo.js"></script>
+  <script src="node_modules/loadheader/header.js"></script>
+  <script src="node_modules/loadFooter/footer.js"></script>
+  <script src="src/assets/js/logica.js"></script>
+
+  <!-- Javascripts developers -->
+  <script src="src/assets/js/Generos/listarGeneros.js"></script>
+  <script src="src/assets/js/Generos/crearGeneros.js"></script>
+  <script src="src/assets/js/Generos/borrarGeneros.js"></script>
+  <script src="src/assets/js/Generos/adminGeneros.js"></script>
+  
+  <script src="src/assets/js/Canciones/listarCanciones.js"></script>
+  <script src="src/assets/js/Canciones/crearCanciones.js"></script>
+  <script src="src/assets/js/Canciones/borrarCanciones.js"></script>
+  <script src="src/assets/js/Canciones/adminCanciones.js"></script>
+  <script src="src/assets/js/Canciones/cargarCancion.js"></script>
+  <script src="src/assets/js/Canciones/actualizarCanciones.js"></script>
+
+  <script src="src/assets/js/Artistas/listarArtistas.js"></script>
+  <script src="src/assets/js/Artistas/crearArtista.js"></script>
+  <script src="src/assets/js/Artistas/borrarArtista.js"></script>
+  <script src="src/assets/js/Artistas/adminArtista.js"></script>
+  <script src="src/assets/js/Artistas/cargarArtista.js"></script>
+  <script src="src/assets/js/Artistas/actualizarArtista.js"></script>
+  
+</body>
+
+</html>
